@@ -1,6 +1,6 @@
 # Options by Construction: Transforming NetHack's Action Space into an Easier MDP Without Discovery
 
-PPO on `NetHackChallenge-v0`. A grammar over the primitive keystroke table enumerates 227 closed-loop `(I, π, β)` options (Sutton, Precup and Singh 1999); nothing is discovered or trained to produce them. Three action tables (`action`, `option`, `both`) are compared at a shared budget of 10^7 primitive steps, five seeds, primitive (SMDP) discounting. A 64-option grammar catalogue ends at median return 100.42 (observed range 91.79-101.14) against 12.54 (6.48-15.76) for primitives.
+PPO on `NetHackChallenge-v0`. A option space over the primitive keystroke table enumerates 227 closed-loop `(I, π, β)` options (Sutton, Precup and Singh 1999); nothing is discovered or trained to produce the option. Three action tables (`action`, `option`, `both`) are compared at a shared budget of 10^7 primitive steps, five seeds, primitive (SMDP) discounting. A 64-option grammar catalogue ends at median return 100.42 (observed range 91.79-101.14) against 12.54 (6.48-15.76) for primitives.
 
 ## Key results
 
